@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    --color-white: white;
+    --color-gray: rgb(211, 211, 211);
+    --color-black: rgb(0, 0, 0);
+}
+body{
+    font-family: Arial,Arial, Helvetica, sans-serif;
+    font-size: 0.28cm;
+    color: var(--color-black);
+    background-color: white;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.imgheader{
+    width: 40px;
+}
+.header, .navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    background-color: var(--color-black);
+    height: 40px;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+.navigation_header{
+    gap: 1em;
+}
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-white);
+    transition: 1s;
+}
+.bnMlHn {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: 1rem solid rgb(255, 255, 255);
+    height: 1em;
+    display: block;
+    border-width: 1px;
+}
+
+
+.header2, .navigation_header2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header2{
+    background-color: var(--color-white);
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 4%;
+    
+}
+.navigation_header2{
+    gap: 5em;
+    z-index: 2;
+}
+.navigation_header2 a{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--color-black);
+    transition: 1s;
+}
+.logo_header2{
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+}
+.caixadepesquisa{
+    background: rgb(0, 0, 0);
+    height: 30px;
+    padding: 7px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.textodepesquisa{
+    border:none;
+    background:none;
+    outline: none;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    width: 0;
+    transition: 0.5s;
+}
+.botaodepesquisa{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.caixadepesquisa:hover > .textodepesquisa{
+    width: 150px;
+    padding: 0 6px;
+}
+.caixadepesquisa:hover > .botaodepesquisa {
+    background: white;
+}
+
+.icbotcab{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .icbotcab{
+        display:block;
+    }
+    .header{
+        display: none;
+    }
+    .navigation_header2{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: white;
+        height: 100%;
+        width: 35vw;
+        padding: 16px;
+        animation-duration: 0.5s;
+        margin-left: 100vw;
+    }
+    .caixadepesquisa{
+        height: 30px;
+        width: 240px;
+        padding: 7px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   
+    }
+    .textodepesquisa{
+        width: 150px;
+    }
+}
+    
+    @keyframes animation {
+from {margin-left: 100vw;}
+to {margin-left: 59vw;}
+}
+
+.header3{
+    display: flex;
+    background-color: black;
+    height: 56px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel{
+    overflow: hidden;
+    height: 56px;
+    width: 275px;
+}
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    
+}
+.imgadd{
+    object-fit: cover;
+    height: 56px;
+    width: 275px;
+}
+.bodyvideo{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.caixadevideo{
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 180px;
+    width: 220px;
+    border-radius: 15px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 10px;
+    flex-direction: column;
+
+}
+.video{
+    height: 100px;
+    width: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.caixadenome{
+    background: rgba(255, 255, 255, 0.591);
+    height: 50px;
+    width: 280px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}

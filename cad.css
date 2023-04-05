@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Orbitron&display=swap');
+
+body{
+    background-color: white;
+}
+
+.box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 3px;
+    color: white;
+}
+fieldset{
+    border: 2px solid white;
+    width: 180px;
+    height: 240px;
+    padding: 0px;
+    font-family: 'Comfortaa', cursive;
+}
+
+legend{
+    border: 2px solid white;
+    padding: 3px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.inputBox{
+    position: relative;
+    font-size: 15px;
+}
+
+.inputUser1{
+    width: 0px;
+    background: none;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    color: white;
+    letter-spacing: 2px;
+}
+.inputUser2{
+    width: 0px;
+    background: none;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    color: white;
+    letter-spacing: 2px;
+}
+.inputUser3{
+    width: 0px;
+    background: none;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.labelinput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5;
+}
+
+.inputUser1:focus ~ .labelinput,
+.inputUser1:valid ~ .labelinput
+{
+    top: -15px;
+    font-size: 12px;
+    transition: 0.1s;
+}
+.inputUser1:valid{
+    border-bottom: 2px solid white;
+    width: 150px;
+}
+.box:hover .inputUser1{
+    border-bottom: 2px solid white;
+    transition: 0.5s;
+    width: 150px;
+}
+
+.inputUser2:focus ~ .labelinput,
+.inputUser2:valid ~ .labelinput
+{
+    top: -15px;
+    font-size: 12px;
+    transition: 0.1s;
+}
+.inputUser2:valid{
+    border-bottom: 2px solid white;
+    width: 150px;
+}
+.box:hover .inputUser2{
+    border-bottom: 2px solid white;
+    transition: 1s;
+    width: 150px;
+}
+.inputUser3:focus ~ .labelinput,
+.inputUser3:valid ~ .labelinput
+{
+    top: -15px;
+    font-size: 12px;
+    transition: 0.1s;
+}
+.inputUser3:valid{
+    border-bottom: 2px solid white;
+    width: 150px;
+}
+.box:hover .inputUser3{
+    border-bottom: 2px solid white;
+    transition: 1.5s;
+    width: 150px;
+}
+
+.divBtn{
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadBtn{
+    position: fixed;
+    left: 17.5%;
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    width: 65%;
+    border-radius: 2px;
+}
+
+.cadBtn:hover{
+    background-color: rgba(255, 68, 0, 0.832);
+}

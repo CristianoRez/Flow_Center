@@ -1,0 +1,7 @@
+CREATE SCHEMA `formulario-cadastro` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ;
+CREATE TABLE `formulario-cadastro`.`usuarios` (
+  `idusuarios` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(110) NOT NULL,
+  `email` VARCHAR(110) NOT NULL,
+  `senha` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idusuarios`));

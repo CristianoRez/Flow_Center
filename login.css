@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Orbitron&display=swap');
+
+body{
+    background-color: white;
+}
+
+.logBack{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+input{
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.btn1{
+    padding: 6px;
+    background-color: orangered;
+    color: white;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.btn1:hover{
+    background-color: rgba(255, 68, 0, 0.832);
+}
