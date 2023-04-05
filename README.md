@@ -3,6 +3,7 @@ Plataforma de vídeos do Flow Podcast
 
 O Site está em versão inicial e apresenta apenas o sistema de cadastro, login e o esboço da página Home.
 
+
 A seguir está os arquivos e suas respectivas funções:
 
 index.php = Página home carregada para usuários não cadastrados.
